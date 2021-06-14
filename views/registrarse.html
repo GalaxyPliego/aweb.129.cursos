@@ -81,7 +81,83 @@
     </nav>
 <br>
     <div class="container">
+      <div class="row bg-muted">
+        <div class="col-6 offset-3">
+          <fieldset>
+            <!--Título legend-->
+            <legend>Formulario de Registro</legend>
 
+            <!--"Action" se pone la ruta del servidor web-->
+            <form action="" method="POST">
+              <ul style="list-style: none;">
+                  <li>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre">
+
+                  </li>
+
+                  <li>
+                    <label for="primerApellido">Primer apellido</label>
+                    <input type="text" name="primerApelido" id="primerApelido">
+                  </li>
+
+                  <li>
+                    <label for="segundoApellido">Segundo Apellido</label>
+                    <input type="text" name="segundoApelido" id="segundoApelido">
+                  </li>
+
+                  <li>
+                    <input type="checkbox" id="presencial" value="Presencial">
+                    <label for="presencial">Presencial:</label>
+
+                    <input type="checkbox" id="remoto" value="Remoto">
+                    <label for="remoto">Remoto:</label>
+
+                    <input type="checkbox" id="mixto" value="Mixto">
+                    <label for="remoto">Mixto:</label>
+
+                  </li>
+
+                  <li>
+                    <input type="radio" name="sexo" id="hombre" value="hombre">
+                    <label for="hombre">Hombre</label>
+
+                    <input type="radio" name="sexo" id="mujer" value="mujer">
+                    <label for="mujer">Mujer</label>
+                    
+                  </li>
+
+                  <li>
+                    <label for="curso">Curso</label>
+                    <select name="curso" id="curso">
+                      <option value="0">Seleccione...</option>
+                      <option value="1">Creatividad y Diseño</option>
+                      <option value="2">Database System</option>
+                      <option value="3">Aplicaciones Móviles</option>
+                      <option value="4">Finanzas Corporativas</option>
+                    </select>
+                  </li>
+
+                  <li>
+                    <label for="observaciones">Obervaciones:</label><br>
+                    <textarea style="resize: none;" name="observaciones" id="observaciones" cols="30" rows="10">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat expedita velit impedit pariatur animi laudantium. Dolore dolorem adipisci enim earum asperiores. Error architecto maxime earum blanditiis voluptate, perferendis neque aspernatur.
+                    </textarea>
+                  </li>
+
+                  <li>
+                    <input type="submit" value="Registrar" name="registrar" id="registrar">
+                    <input type="reset" value="Cancelar" name="reset" id="reset">
+                  </li>
+              </ul>
+
+
+            </form>
+
+
+          </fieldset>
+        </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
